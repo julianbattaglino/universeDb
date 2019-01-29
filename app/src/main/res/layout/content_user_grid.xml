@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/favTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="@string/favorites"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerviewHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:visibility="gone"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        tools:context="com.battaglino.santiago.sweatworks.user.activity.UserGridActivity"
+        tools:listitem="@layout/user_list_image" />
+
+    <TextView
+        android:id="@+id/usersTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:padding="4dp"
+        android:text="@string/usuarios" />
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        tools:context="com.battaglino.santiago.sweatworks.user.activity.UserGridActivity"
+        tools:listitem="@layout/user_list_image" />
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="left"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground" />
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/firstname" />
+
+    <TextView
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/lastname" />
+
+
+    <TextView
+        android:id="@+id/nationality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/nationality" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/state" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/city" />
+
+    <TextView
+        android:id="@+id/telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/telephone" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/email" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@android:color/white" />
+
+
+</LinearLayout>

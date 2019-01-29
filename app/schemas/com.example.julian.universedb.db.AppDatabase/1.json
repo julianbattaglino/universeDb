@@ -1,0 +1,310 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "99859361cd259009376cc55ccf9b7158",
+    "entities": [
+      {
+        "tableName": "users",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `gender` TEXT, `name` TEXT, `email` TEXT, `phone` TEXT, `cell` TEXT, `picture` TEXT, `nat` TEXT, `isFavorite` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gender",
+            "columnName": "gender",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "phone",
+            "columnName": "phone",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cell",
+            "columnName": "cell",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "picture",
+            "columnName": "picture",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nat",
+            "columnName": "nat",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isFavorite",
+            "columnName": "isFavorite",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_users_uid",
+            "unique": false,
+            "columnNames": [
+              "uid"
+            ],
+            "createSql": "CREATE  INDEX `index_users_uid` ON `${TABLE_NAME}` (`uid`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "ligas",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `leagueId` TEXT, `leagueName` TEXT, `queueType` TEXT, `position` TEXT, `tier` TEXT, `rank` TEXT, `leaguePoints` INTEGER, `wins` INTEGER, `losses` INTEGER, `veteran` INTEGER, `inactive` INTEGER, `freshBlood` INTEGER, `hotStreak` INTEGER, `miniSeries` TEXT, `summonerId` TEXT, `summonerName` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "leagueId",
+            "columnName": "leagueId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "leagueName",
+            "columnName": "leagueName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "queueType",
+            "columnName": "queueType",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "position",
+            "columnName": "position",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tier",
+            "columnName": "tier",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rank",
+            "columnName": "rank",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "leaguePoints",
+            "columnName": "leaguePoints",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wins",
+            "columnName": "wins",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "losses",
+            "columnName": "losses",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "veteran",
+            "columnName": "veteran",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "inactive",
+            "columnName": "inactive",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "freshBlood",
+            "columnName": "freshBlood",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "hotStreak",
+            "columnName": "hotStreak",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "miniSeries",
+            "columnName": "miniSeries",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "summonerId",
+            "columnName": "summonerId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "summonerName",
+            "columnName": "summonerName",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_ligas_uid",
+            "unique": false,
+            "columnNames": [
+              "uid"
+            ],
+            "createSql": "CREATE  INDEX `index_ligas_uid` ON `${TABLE_NAME}` (`uid`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "myusers",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `id` TEXT, `firstName` TEXT, `lastName` TEXT, `email` TEXT, `telephone` TEXT, `nationality` TEXT, `city` TEXT, `state` TEXT, `age` TEXT, `pictureUrl` TEXT, `sectorId` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "firstName",
+            "columnName": "firstName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastName",
+            "columnName": "lastName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "telephone",
+            "columnName": "telephone",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nationality",
+            "columnName": "nationality",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "city",
+            "columnName": "city",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "state",
+            "columnName": "state",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "age",
+            "columnName": "age",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pictureUrl",
+            "columnName": "pictureUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sectorId",
+            "columnName": "sectorId",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_myusers_uid",
+            "unique": false,
+            "columnNames": [
+              "uid"
+            ],
+            "createSql": "CREATE  INDEX `index_myusers_uid` ON `${TABLE_NAME}` (`uid`)"
+          }
+        ],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"99859361cd259009376cc55ccf9b7158\")"
+    ]
+  }
+}

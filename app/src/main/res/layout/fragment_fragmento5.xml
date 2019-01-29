@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cardview_gradient"
+    tools:context="com.example.julian.syloperligas.ViewPagerFragments.Fragmento5">
+
+    <ImageView
+        android:id="@+id/germany"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/brc"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/germany" />
+
+
+    <ImageView
+        android:id="@+id/united"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/united" />
+
+    <ImageView
+        android:id="@+id/psg"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/psg" />
+
+
+    <ImageView
+        android:id="@+id/brc"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignTop="@+id/city"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/brc" />
+
+    <ImageView
+        android:id="@+id/city"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/city" />
+
+    <ImageView
+        android:id="@+id/br"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/br" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="Equipos Animaciones"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
