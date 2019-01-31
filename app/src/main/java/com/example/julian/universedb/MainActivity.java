@@ -8,27 +8,25 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Spinner;
 
-import com.example.julian.universedb.ViewPager.Fragmento1;
-import com.example.julian.universedb.ViewPager.Fragmento2;
-import com.example.julian.universedb.ViewPager.Fragmento3;
-import com.example.julian.universedb.ViewPager.Fragmento4;
-import com.example.julian.universedb.ViewPager.Fragmento5;
-import com.example.julian.universedb.ViewPager.Fragmento6;
+import com.example.julian.universedb.ViewPager.FragmentoCometas;
+import com.example.julian.universedb.ViewPager.FragmentoConstelaciones;
+import com.example.julian.universedb.ViewPager.FragmentoGalaxias;
+import com.example.julian.universedb.ViewPager.FragmentoNebulosas;
+import com.example.julian.universedb.ViewPager.FragmentoPlanetas;
+import com.example.julian.universedb.ViewPager.FragmentoSupernovas;
 import com.example.julian.universedb.ViewPager.SectionsPagerAdapter;
 
 
 public class MainActivity extends AppCompatActivity implements
-        Fragmento1.OnFragmentInteractionListener,
-        Fragmento2.OnFragmentInteractionListener,
-        Fragmento3.OnFragmentInteractionListener,
-        Fragmento4.OnFragmentInteractionListener,
-        Fragmento5.OnFragmentInteractionListener,
-        Fragmento6.OnFragmentInteractionListener {
+        FragmentoPlanetas.OnFragmentInteractionListener,
+        FragmentoNebulosas.OnFragmentInteractionListener,
+        FragmentoGalaxias.OnFragmentInteractionListener,
+        FragmentoConstelaciones.OnFragmentInteractionListener,
+        FragmentoSupernovas.OnFragmentInteractionListener,
+        FragmentoCometas.OnFragmentInteractionListener {
 
 
-    Spinner spinner2;
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
 

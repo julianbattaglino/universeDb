@@ -23,15 +23,7 @@ import java.util.List;
 public class BuilderManager {
 
     private static int[] imageResources = new int[]{
-            R.drawable.brc1,
-            R.drawable.city1,
-            R.drawable.germany1,
-            R.drawable.psg1,
-            R.drawable.realmadrid1,
-            R.drawable.united1,
-            R.drawable.inter1,
-            R.drawable.bayer1,
-            R.drawable.br1,
+
     };
 
     private static int imageResourceIndex = 0;

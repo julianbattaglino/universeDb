@@ -17,20 +17,20 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new Fragmento1();
+                return new FragmentoPlanetas();
             case 1:
-                return new Fragmento2();
+                return new FragmentoNebulosas();
             case 2:
-                return new Fragmento3();
+                return new FragmentoGalaxias();
             case 3:
-                return new Fragmento4();
+                return new FragmentoConstelaciones();
             case 4:
-                return new Fragmento5();
+                return new FragmentoSupernovas();
             case 5:
-                return new Fragmento6();
+                return new FragmentoCometas();
 
             default:
-                return new Fragmento1();
+                return new FragmentoPlanetas();
         }
 
 

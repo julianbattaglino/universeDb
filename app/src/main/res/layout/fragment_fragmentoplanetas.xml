@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cardview_gradient"
+    tools:context="com.example.julian.syloperligas.ViewPagerFragments.Fragmento1">
+
+    <ImageView
+        android:id="@+id/planetas"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/estrellas"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:src="@drawable/jupiterpng" />
+
+    <ImageView
+        android:id="@+id/satelitesnaturales"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/planetas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-1dp"
+        android:src="@drawable/moonpng" />
+
+    <ImageView
+        android:id="@+id/estrellas"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="18dp"
+        android:src="@drawable/sunpng" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/planetas"
+        android:layout_alignTop="@+id/textView3"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="Planetas"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="Satelites Naturales"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="157dp"
+        android:layout_marginEnd="22dp"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="Estrellas"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -56,12 +56,11 @@
         android:id="@+id/fab_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView18"
-        android:layout_alignParentEnd="true"
         android:clickable="true"
         android:focusable="true"
-        app:backgroundTint="@android:color/white"
-        app:srcCompat="@drawable/twotone_language_black_48" />
+        android:src="@drawable/iconsaturno"
+        android:tint="@color/cardview_light_background"
+        app:backgroundTint="@android:color/background_dark" />
 
 
 </RelativeLayout>
