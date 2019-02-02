@@ -4,6 +4,7 @@ package com.example.julian.universedb.di.modules;
 import com.example.julian.universedb.BuildConfig;
 import com.example.julian.universedb.global.services.LOLApiService;
 import com.example.julian.universedb.global.services.MyApiServices;
+import com.example.julian.universedb.global.services.NebulasApiServices;
 import com.example.julian.universedb.global.services.RandomUserApiServic;
 
 import javax.inject.Singleton;
@@ -68,4 +69,16 @@ public class RetrofitModule {
         return retrofit.create(MyApiServices.class);
     }
 
+    @Provides
+    @Singleton
+    NebulasApiServices provideNebulasApiServices(OkHttpClient okHttpClient) {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(BuildConfig.API_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .client(okHttpClient).build();
+
+        return retrofit.create(NebulasApiServices.class);
+
+    }
 }

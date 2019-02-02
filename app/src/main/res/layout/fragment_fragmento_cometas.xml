@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/cardview_gradient"
 
-    tools:context=".ViewPager.FragmentoCometas">
+    tools:context=".viewpager.FragmentoCometas">
 
     <ImageView
         android:id="@+id/cometas"

@@ -3,6 +3,7 @@ package com.example.julian.universedb.di.modules;
 
 import com.example.julian.universedb.liga.activity.LigaActivity;
 import com.example.julian.universedb.mydb.activity.MyDbActivity;
+import com.example.julian.universedb.nebulosas.activity.NebulosasActivity;
 import com.example.julian.universedb.user.activity.UserDetailActivity;
 import com.example.julian.universedb.user.activity.UserGridActivity;
 
@@ -29,4 +30,8 @@ public abstract class ActivityBuilder {
 
     @ContributesAndroidInjector(modules = {UserDetailActivityModule.class})
     abstract UserDetailActivity bindUserDetailActivity();
+
+    @ContributesAndroidInjector(modules = {NebulosasActivityModule.class})
+    abstract NebulosasActivity bindNebulosasActivity();
+
 }

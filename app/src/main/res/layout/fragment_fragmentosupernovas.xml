@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/cardview_gradient"
-    tools:context="com.example.julian.universedb.ViewPager.FragmentoSupernovas">
+    tools:context="com.example.julian.universedb.viewpager.FragmentoSupernovas">
 
 
     <ImageView

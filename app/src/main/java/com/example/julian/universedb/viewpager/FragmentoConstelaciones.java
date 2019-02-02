@@ -1,4 +1,4 @@
-package com.example.julian.universedb.ViewPager;
+package com.example.julian.universedb.viewpager;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.example.julian.universedb.AnimationUtils;
 import com.example.julian.universedb.R;
-import com.example.julian.universedb.mydb.activity.MyDbActivity;
+import com.example.julian.universedb.nebulosas.activity.NebulosasActivity;
 
 
 /**
@@ -97,7 +97,7 @@ public class FragmentoConstelaciones extends Fragment implements View.OnClickLis
         constelaciones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getContext(), MyDbActivity.class);
+                Intent i = new Intent(getContext(), NebulosasActivity.class);
                 startActivity(i);
             }
         });

@@ -1,4 +1,4 @@
-package com.example.julian.universedb.ViewPager;
+package com.example.julian.universedb.viewpager;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,15 +10,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.julian.universedb.AnimationUtils;
 import com.example.julian.universedb.R;
-import com.example.julian.universedb.actividadesuniverso.SatelitesNaturalesActivity;
-import com.example.julian.universedb.mydb.activity.MyDbActivity;
+import com.example.julian.universedb.nebulosas.activity.NebulosasActivity;
 
 
 /**
@@ -29,7 +26,7 @@ import com.example.julian.universedb.mydb.activity.MyDbActivity;
  * Use the {@link FragmentoSupernovas#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentoPlanetas extends Fragment implements View.OnClickListener {
+public class FragmentoNebulosas extends Fragment implements View.OnClickListener {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -41,7 +38,7 @@ public class FragmentoPlanetas extends Fragment implements View.OnClickListener 
 
     private OnFragmentInteractionListener mListener;
 
-    public FragmentoPlanetas() {
+    public FragmentoNebulosas() {
         // Required empty public constructor
     }
 
@@ -78,7 +75,7 @@ public class FragmentoPlanetas extends Fragment implements View.OnClickListener 
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragmentoplanetas, container, false);
+        return inflater.inflate(R.layout.fragment_fragmentonebulosas, container, false);
     }
 
     @Override
@@ -87,69 +84,38 @@ public class FragmentoPlanetas extends Fragment implements View.OnClickListener 
 
         //***Aca Tengo Asignados Los 6 ImageButton de los equipos cargados hasta el momento***
 
-        TextView tv1 = view.findViewById(R.id.textView1);
-        TextView tv2 = view.findViewById(R.id.textView2);
-        TextView tv3 = view.findViewById(R.id.textView3);
+
+        TextView tvnebulosas = view.findViewById(R.id.tvnebulosas);
+        TextView tvnebulosasplanetarias = view.findViewById(R.id.tvnebulosasplanetarias);
+
+        ImageView nebulosas = view.findViewById(R.id.nebulosas);
+        ImageView nebulosasplanetarias = view.findViewById(R.id.nebulosasplanetarias);
 
 
-        ImageView planetas = view.findViewById(R.id.planetas);
-        ImageView satelites = view.findViewById(R.id.satelitesnaturales);
-        ImageView estrellas = view.findViewById(R.id.estrellas);
+        AnimationUtils.enterLeft(tvnebulosas, 2000);
+        AnimationUtils.enterRight(tvnebulosasplanetarias, 2500);
 
 
-        AnimationUtils.enterBottom(tv2, 1500);
-        AnimationUtils.enterRight(tv1, 1600);
-        AnimationUtils.enterLeft(tv3, 1700);
+        AnimationUtils.enterRight(nebulosas, 1000);
 
+        AnimationUtils.enterLeft(nebulosasplanetarias, 1500);
 
-        AnimationUtils.enterBottom(planetas, 1000);
-        AnimationUtils.enterRight(estrellas, 1100);
-        AnimationUtils.enterLeft(satelites, 1200);
-
-        RotateAnimation rotate = new RotateAnimation(
-                0, 360,
-                Animation.RELATIVE_TO_SELF, 0.5f,
-                Animation.RELATIVE_TO_SELF, 0.5f
-        );
-        rotate.setDuration(4000);
-        rotate.setRepeatCount(Animation.INFINITE);
-        planetas.startAnimation(rotate);
-
-
-        rotate.setDuration(4000);
-        rotate.setRepeatCount(Animation.INFINITE);
-        satelites.startAnimation(rotate);
-
-        rotate.setDuration(4000);
-        rotate.setRepeatCount(Animation.INFINITE);
-        estrellas.startAnimation(rotate);
-
-
-        planetas.setOnClickListener(new View.OnClickListener() {
+        nebulosas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getContext(), MyDbActivity.class);
+                Intent i = new Intent(getContext(), NebulosasActivity.class);
+                startActivity(i);
+            }
+
+        });
+
+        nebulosasplanetarias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), NebulosasActivity.class);
                 startActivity(i);
             }
         });
-
-        satelites.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getContext(), SatelitesNaturalesActivity.class);
-                startActivity(i);
-            }
-        });
-
-        estrellas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getContext(), MyDbActivity.class);
-                startActivity(i);
-            }
-        });
-
-
     }
     //***Aca Termina El onViewCreated (Para declarar algun objeto, hacerlo aca)***
 

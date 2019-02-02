@@ -1,4 +1,4 @@
-package com.example.julian.universedb.ViewPager;
+package com.example.julian.universedb.viewpager;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.example.julian.universedb.AnimationUtils;
 import com.example.julian.universedb.R;
-import com.example.julian.universedb.mydb.activity.MyDbActivity;
+import com.example.julian.universedb.nebulosas.activity.NebulosasActivity;
 
 
 /**
@@ -26,7 +26,7 @@ import com.example.julian.universedb.mydb.activity.MyDbActivity;
  * Use the {@link FragmentoSupernovas#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentoCometas extends Fragment implements View.OnClickListener {
+public class FragmentoGalaxias extends Fragment implements View.OnClickListener {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -38,7 +38,7 @@ public class FragmentoCometas extends Fragment implements View.OnClickListener {
 
     private OnFragmentInteractionListener mListener;
 
-    public FragmentoCometas() {
+    public FragmentoGalaxias() {
         // Required empty public constructor
     }
 
@@ -75,28 +75,39 @@ public class FragmentoCometas extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragmento_cometas, container, false);
+        return inflater.inflate(R.layout.fragment_fragmentogalaxias, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        //***Aca Tengo Asignados Los 6 ImageButton de los equipos cargados hasta el momento***
+        //***Aca Tengo Asignados Los  ImageButton cargados hasta el momento***
 
 
-        TextView tvcometas = view.findViewById(R.id.tvcometas);
-        ImageView cometas = view.findViewById(R.id.cometas);
-
-        AnimationUtils.enterRight(tvcometas, 2500);
-
-        AnimationUtils.enterLeft(cometas, 1000);
+        TextView tvgalaxias = view.findViewById(R.id.tvgalaxias);
+        ImageView galaxy = view.findViewById(R.id.galaxy);
+        ImageView galaxyhat = view.findViewById(R.id.galaxyhat);
 
 
-        cometas.setOnClickListener(new View.OnClickListener() {
+        AnimationUtils.enterTop(tvgalaxias, 2500);
+
+        AnimationUtils.enterRight(galaxy, 1000);
+        AnimationUtils.enterLeft(galaxyhat, 1500);
+
+
+        galaxy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getContext(), MyDbActivity.class);
+                Intent i = new Intent(getContext(), NebulosasActivity.class);
+                startActivity(i);
+            }
+        });
+
+        galaxyhat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), NebulosasActivity.class);
                 startActivity(i);
             }
         });

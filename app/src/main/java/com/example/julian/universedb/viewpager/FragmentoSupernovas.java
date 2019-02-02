@@ -1,4 +1,4 @@
-package com.example.julian.universedb.ViewPager;
+package com.example.julian.universedb.viewpager;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.example.julian.universedb.AnimationUtils;
 import com.example.julian.universedb.R;
-import com.example.julian.universedb.mydb.activity.MyDbActivity;
+import com.example.julian.universedb.nebulosas.activity.NebulosasActivity;
 
 
 /**
@@ -26,7 +26,7 @@ import com.example.julian.universedb.mydb.activity.MyDbActivity;
  * Use the {@link FragmentoSupernovas#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentoNebulosas extends Fragment implements View.OnClickListener {
+public class FragmentoSupernovas extends Fragment implements View.OnClickListener {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -38,7 +38,7 @@ public class FragmentoNebulosas extends Fragment implements View.OnClickListener
 
     private OnFragmentInteractionListener mListener;
 
-    public FragmentoNebulosas() {
+    public FragmentoSupernovas() {
         // Required empty public constructor
     }
 
@@ -75,47 +75,33 @@ public class FragmentoNebulosas extends Fragment implements View.OnClickListener
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragmentonebulosas, container, false);
+        return inflater.inflate(R.layout.fragment_fragmentosupernovas, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        //***Aca Tengo Asignados Los 6 ImageButton de los equipos cargados hasta el momento***
+        //***Aca Tengo Asignados Los ImageButton cargados hasta el momento***
 
 
-        TextView tvnebulosas = view.findViewById(R.id.tvnebulosas);
-        TextView tvnebulosasplanetarias = view.findViewById(R.id.tvnebulosasplanetarias);
+        ImageView supernova = view.findViewById(R.id.supernovas);
+        TextView tvsupernova = view.findViewById(R.id.tvsupernovas);
 
-        ImageView nebulosas = view.findViewById(R.id.nebulosas);
-        ImageView nebulosasplanetarias = view.findViewById(R.id.nebulosasplanetarias);
+        AnimationUtils.enterLeft(tvsupernova, 1000);
 
-
-        AnimationUtils.enterLeft(tvnebulosas, 2000);
-        AnimationUtils.enterRight(tvnebulosasplanetarias, 2500);
+        AnimationUtils.enterRight(supernova, 1000);
 
 
-        AnimationUtils.enterRight(nebulosas, 1000);
-
-        AnimationUtils.enterLeft(nebulosasplanetarias, 1500);
-
-        nebulosas.setOnClickListener(new View.OnClickListener() {
+        supernova.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getContext(), MyDbActivity.class);
-                startActivity(i);
-            }
-
-        });
-
-        nebulosasplanetarias.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getContext(), MyDbActivity.class);
+                Intent i = new Intent(getContext(), NebulosasActivity.class);
                 startActivity(i);
             }
         });
+
+
     }
     //***Aca Termina El onViewCreated (Para declarar algun objeto, hacerlo aca)***
 

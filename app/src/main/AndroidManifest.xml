@@ -9,8 +9,8 @@
         android:name="com.example.julian.universedb.global.App"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
-        android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/iconsaturno"
+        android:roundIcon="@drawable/iconsaturno"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
@@ -29,6 +29,11 @@
             android:label="@string/ViewPager" />
 
         <activity
+            android:name=".nebulosas.activity.NebulosasActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+
+        <activity
             android:name=".actividadesuniverso.PlanetasActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
@@ -39,10 +44,6 @@
         <activity
             android:name=".actividadesuniverso.EstrellasActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-        <activity
-            android:name=".actividadesuniverso.NebulosasActivity"
-            android:theme="@style/Theme.Design.NoActionBar" />
 
 
         <activity
@@ -70,9 +71,6 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
 
-        <activity
-            android:name="com.example.julian.universedb.mydb.activity.MyDbActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
             android:name="com.example.julian.universedb.user.activity.UserGridActivity"

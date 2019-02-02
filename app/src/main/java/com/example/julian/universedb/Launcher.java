@@ -17,7 +17,7 @@ import android.widget.TextView;
 
 public class Launcher extends AppCompatActivity {
 
-    boolean isLigaSelected = false;
+    boolean isActividadSelected = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -58,10 +58,10 @@ public class Launcher extends AppCompatActivity {
 
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int pos, long id) {
-                if (isLigaSelected) {
+                if (isActividadSelected) {
                     openMainActivity(pos);
                 }
-                isLigaSelected = true;
+                isActividadSelected = true;
             }
 
             @Override
@@ -74,7 +74,7 @@ public class Launcher extends AppCompatActivity {
     private void openMainActivity(int pos) {
         //Toast.makeText(adapterView.getContext(), (String) adapterView.getItemAtPosition(pos), Toast.LENGTH_SHORT).show();
         Intent i = new Intent(Launcher.this, MainActivity.class);
-        i.putExtra("division", pos);
+        i.putExtra("", pos);
         startActivity(i);
     }
 }

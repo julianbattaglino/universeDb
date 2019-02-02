@@ -1,4 +1,4 @@
-package com.example.julian.universedb.ViewPager;
+package com.example.julian.universedb.viewpager;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
