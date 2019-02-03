@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "c4df49a096e92bee7e1e8728033b6693",
+    "identityHash": "794f356a9080f9a421547929f6559dad",
     "entities": [
       {
         "tableName": "users",
@@ -397,7 +397,7 @@
         "foreignKeys": []
       },
       {
-        "tableName": "planetarias",
+        "tableName": "NebulosasPlanetarias",
         "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `id` TEXT, `name` TEXT, `tipo` TEXT, `distancia` TEXT, `datos` TEXT, `descripcion` TEXT, `constelacion` TEXT, `ascensiNrecta` TEXT, `declinaciN` TEXT, `otrasDesignaciones` TEXT, `image` TEXT)",
         "fields": [
           {
@@ -481,12 +481,12 @@
         },
         "indices": [
           {
-            "name": "index_planetarias_uid",
+            "name": "index_NebulosasPlanetarias_uid",
             "unique": false,
             "columnNames": [
               "uid"
             ],
-            "createSql": "CREATE  INDEX `index_planetarias_uid` ON `${TABLE_NAME}` (`uid`)"
+            "createSql": "CREATE  INDEX `index_NebulosasPlanetarias_uid` ON `${TABLE_NAME}` (`uid`)"
           }
         ],
         "foreignKeys": []
@@ -494,7 +494,7 @@
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"c4df49a096e92bee7e1e8728033b6693\")"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"794f356a9080f9a421547929f6559dad\")"
     ]
   }
 }

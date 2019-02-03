@@ -12,7 +12,7 @@ import java.util.List;
 @Dao
 public interface PlanetariasDao {
 
-    @Query("select * from planetarias")
+    @Query("select * from NebulosasPlanetarias")
     LiveData<List<Planetarias>> loadList();
 
     @Insert

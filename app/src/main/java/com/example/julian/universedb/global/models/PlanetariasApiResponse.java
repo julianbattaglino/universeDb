@@ -8,7 +8,7 @@ import java.util.List;
 
 public class PlanetariasApiResponse {
 
-    @SerializedName("Planetarias")
+    @SerializedName("NebulosasPlanetarias")
     @Expose
     public List<Planetarias> planetarias = null;
 

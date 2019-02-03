@@ -27,6 +27,7 @@ public class Launcher extends AppCompatActivity {
 
         TextView poweredby = findViewById(R.id.powered);
         TextView dharma = findViewById(R.id.dharma);
+        TextView universedb = findViewById(R.id.universedb);
 
 
         ImageView moon = findViewById(R.id.moon);
@@ -34,10 +35,11 @@ public class Launcher extends AppCompatActivity {
         Spinner spinner = findViewById(R.id.spinner);
 
 
-        AnimationUtils.enterTop(moon, 1000);
-        AnimationUtils.landMe(moon, 2000);
 
         AnimationUtils.enterLeft(cardviewspinner, 1500);
+
+        AnimationUtils.enterRight(universedb, 2000);
+        AnimationUtils.rotateX(universedb, 2200);
 
         AnimationUtils.enterLeft(poweredby, 2200);
         AnimationUtils.enterLeft(dharma, 2000);

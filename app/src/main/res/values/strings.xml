@@ -80,6 +80,14 @@
     <string name="name">name</string>
     <string name="tipo">tipo</string>
     <string name="todo">TODO</string>
+    <string name="name2">name2</string>
+    <string name="tipo2">tipo2</string>
+    <string name="distancia2">distancia2</string>
+    <string name="descripcion2">descripcion2</string>
+    <string name="constelacion2">constelacion2</string>
+    <string name="ascension2">ascension2</string>
+    <string name="declinacion2">declinacion2</string>
+    <string name="otras_designaciones2">otras_designaciones2</string>
 
 
 </resources>

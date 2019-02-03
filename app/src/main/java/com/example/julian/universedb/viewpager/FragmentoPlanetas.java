@@ -96,14 +96,15 @@ public class FragmentoPlanetas extends Fragment implements View.OnClickListener 
         ImageView estrellas = view.findViewById(R.id.estrellas);
 
 
-        AnimationUtils.enterBottom(tv2, 1500);
         AnimationUtils.enterRight(tv1, 1600);
+        AnimationUtils.rotateX(tv1, 1800);
+
+        AnimationUtils.enterBottom(tv2, 1500);
+        AnimationUtils.rotateX(tv2, 1700);
+
         AnimationUtils.enterLeft(tv3, 1700);
+        AnimationUtils.rotateX(tv3, 1900);
 
-
-        AnimationUtils.enterBottom(planetas, 1000);
-        AnimationUtils.enterRight(estrellas, 1100);
-        AnimationUtils.enterLeft(satelites, 1200);
 
         RotateAnimation rotate = new RotateAnimation(
                 0, 360,

@@ -84,7 +84,7 @@ public class PlanetariasAdapter extends RecyclerView.Adapter<PlanetariasAdapter.
 
     private View createView(Context context, ViewGroup viewGroup, int viewType) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        return inflater.inflate(R.layout.db_list, viewGroup, false);
+        return inflater.inflate(R.layout.planetarias_list, viewGroup, false);
     }
 
     @Override
@@ -117,32 +117,31 @@ public class PlanetariasAdapter extends RecyclerView.Adapter<PlanetariasAdapter.
     public class PlanetariasViewHolder extends RecyclerView.ViewHolder
             implements View.OnClickListener {
 
-        @BindView(R.id.name)
+        @BindView(R.id.nameplanetarias)
         TextView name;
 
-        @BindView(R.id.tipo)
+        @BindView(R.id.tipoplanetarias)
         TextView tipo;
 
-        @BindView(R.id.distancia)
+        @BindView(R.id.distanciaplanetarias)
         TextView distancia;
 
-        @BindView(R.id.descripcion)
+        @BindView(R.id.descripcionplanetarias)
         TextView descripcion;
 
-        @BindView(R.id.constelacion)
+        @BindView(R.id.constelacionplanetarias)
         TextView constelacion;
 
-        @BindView(R.id.declinaciN)
-        TextView declinaciN;
-
-        @BindView(R.id.ascensiNrecta)
+        @BindView(R.id.ascensiNrectaplanetarias)
         TextView ascensiNrecta;
 
-        @BindView(R.id.otrasDesignaciones)
+        @BindView(R.id.declinaciNplanetarias)
+        TextView declinaciN;
+
+        @BindView(R.id.otrasDesignacionesplanetarias)
         TextView otrasDesignaciones;
 
-
-        @BindView(R.id.imageview)
+        @BindView(R.id.imageplanetarias)
         ImageView imageView;
 
         PlanetariasViewHolder(View view, PlanetariasAdapter.OnViewHolderClick listener) {

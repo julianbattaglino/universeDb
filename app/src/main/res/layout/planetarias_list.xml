@@ -5,9 +5,8 @@
     android:orientation="vertical"
     android:padding="4dp">
 
-
     <ImageView
-        android:id="@+id/imageview"
+        android:id="@+id/imageplanetarias"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="start"
@@ -16,86 +15,87 @@
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground" />
 
+
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/nameplanetarias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/roboto_mono_bold_italic"
         android:foreground="?attr/selectableItemBackground"
-        android:text="@string/name" />
+        android:text="@string/name2" />
 
     <TextView
-        android:id="@+id/tipo"
+        android:id="@+id/tipoplanetarias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/roboto_mono_bold_italic"
         android:foreground="?attr/selectableItemBackground"
-        android:text="@string/tipo" />
+        android:text="@string/tipo2" />
 
 
     <TextView
-        android:id="@+id/distancia"
+        android:id="@+id/distanciaplanetarias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/roboto_mono_bold_italic"
         android:foreground="?attr/selectableItemBackground"
-        android:text="@string/distancia" />
+        android:text="@string/distancia2" />
 
     <TextView
-        android:id="@+id/descripcion"
+        android:id="@+id/descripcionplanetarias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/roboto_mono_bold_italic"
         android:foreground="?attr/selectableItemBackground"
-        android:text="@string/descripcion" />
+        android:text="@string/descripcion2" />
 
     <TextView
-        android:id="@+id/constelacion"
+        android:id="@+id/constelacionplanetarias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/roboto_mono_bold_italic"
         android:foreground="?attr/selectableItemBackground"
-        android:text="@string/constelacion" />
+        android:text="@string/constelacion2" />
 
     <TextView
-        android:id="@+id/ascensiNrecta"
+        android:id="@+id/ascensiNrectaplanetarias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/roboto_mono_bold_italic"
         android:foreground="?attr/selectableItemBackground"
-        android:text="@string/ascension" />
+        android:text="@string/ascension2" />
 
     <TextView
-        android:id="@+id/declinaciN"
+        android:id="@+id/declinaciNplanetarias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/roboto_mono_bold_italic"
         android:foreground="?attr/selectableItemBackground"
-        android:text="@string/declinacion" />
+        android:text="@string/declinacion2" />
 
     <TextView
-        android:id="@+id/otrasDesignaciones"
+        android:id="@+id/otrasDesignacionesplanetarias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/roboto_mono_bold_italic"
         android:foreground="?attr/selectableItemBackground"
-        android:text="@string/otras_designaciones" />
+        android:text="@string/otras_designaciones2" />
 
     <View
         android:layout_width="wrap_content"

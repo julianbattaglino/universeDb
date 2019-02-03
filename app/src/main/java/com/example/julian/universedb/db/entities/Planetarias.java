@@ -13,7 +13,7 @@ import org.parceler.Parcel;
 import io.reactivex.annotations.NonNull;
 
 @Parcel
-@Entity(tableName = "planetarias", indices = @Index(value = {"uid"}))
+@Entity(tableName = "NebulosasPlanetarias", indices = @Index(value = {"uid"}))
 public class Planetarias {
 
     @PrimaryKey(autoGenerate = true)
