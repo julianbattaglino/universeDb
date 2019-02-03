@@ -63,13 +63,14 @@ public class NebulosasRepository extends UseCaseRepository<Nebulosas> {
                     }
 
                     @Override
-                    public void onNext(NebulasApiResponse apiResponse) {
-                        addDataList(apiResponse.Nebulosas);
+                    public void onNext(NebulasApiResponse nebulasApiResponse) {
+                        addDataList(nebulasApiResponse.Nebulosas);
                         mDisposable.dispose();
                     }
 
                     @Override
                     public void onError(Throwable e) {
+                        e.printStackTrace();
 
                     }
 

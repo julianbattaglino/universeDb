@@ -21,7 +21,7 @@ import butterknife.ButterKnife;
 /**
  * Created by Santiago Battaglino.
  */
-public class NebulosasAdapter extends RecyclerView.Adapter<NebulosasAdapter.UserViewHolder> {
+public class NebulosasAdapter extends RecyclerView.Adapter<NebulosasAdapter.NebulosasViewHolder> {
 
     private Context context;
     private NebulosasAdapter.OnViewHolderClick clickListener;
@@ -35,17 +35,17 @@ public class NebulosasAdapter extends RecyclerView.Adapter<NebulosasAdapter.User
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NebulosasAdapter.UserViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull NebulosasAdapter.NebulosasViewHolder holder, int position) {
         bindView(getItem(position), holder);
     }
 
-    private void bindView(Nebulosas nebulosas, NebulosasAdapter.UserViewHolder viewHolder) {
+    private void bindView(Nebulosas nebulosas, NebulosasAdapter.NebulosasViewHolder viewHolder) {
         if (nebulosas != null) {
             setUpNebulosas(nebulosas, viewHolder);
         }
     }
 
-    private void setUpNebulosas(Nebulosas nebulosas, NebulosasAdapter.UserViewHolder viewHolder) {
+    private void setUpNebulosas(Nebulosas nebulosas, NebulosasAdapter.NebulosasViewHolder viewHolder) {
         // para setear varios valores con String.format
         /*viewHolder.observacion.setText(String.format(Locale.getDefault(), "uid: %d cell: %s ascensiNrecta: %s gender: %s nat: %s",
                 User.uid,
@@ -81,8 +81,8 @@ public class NebulosasAdapter extends RecyclerView.Adapter<NebulosasAdapter.User
 
     @NonNull
     @Override
-    public NebulosasAdapter.UserViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new NebulosasAdapter.UserViewHolder(createView(context, parent, viewType), clickListener);
+    public NebulosasAdapter.NebulosasViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new NebulosasAdapter.NebulosasViewHolder(createView(context, parent, viewType), clickListener);
     }
 
     private View createView(Context context, ViewGroup viewGroup, int viewType) {
@@ -117,7 +117,7 @@ public class NebulosasAdapter extends RecyclerView.Adapter<NebulosasAdapter.User
         void onClick(View view, int position, Nebulosas item);
     }
 
-    public class UserViewHolder extends RecyclerView.ViewHolder
+    public class NebulosasViewHolder extends RecyclerView.ViewHolder
             implements View.OnClickListener {
 
         @BindView(R.id.name)
@@ -147,7 +147,7 @@ public class NebulosasAdapter extends RecyclerView.Adapter<NebulosasAdapter.User
         @BindView(R.id.imageview)
         ImageView imageView;
 
-        UserViewHolder(View view, NebulosasAdapter.OnViewHolderClick listener) {
+        NebulosasViewHolder(View view, NebulosasAdapter.OnViewHolderClick listener) {
             super(view);
             ButterKnife.bind(this, view);
 

@@ -7,7 +7,7 @@ import retrofit2.http.GET;
 
 public interface NebulasApiServices {
 
-    @GET("/julianbattaglino/dbjson/Nebulosas")
+    @GET("/juli/nebulosas/response.json")
     Observable<NebulasApiResponse> getNebulas(
     );
 }

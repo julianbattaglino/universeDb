@@ -3,11 +3,13 @@ package com.example.julian.universedb;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.internal.BottomNavigationItemView;
+import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.example.julian.universedb.viewpager.FragmentoCometas;
@@ -25,11 +27,13 @@ public class MainActivity extends AppCompatActivity implements
         FragmentoGalaxias.OnFragmentInteractionListener,
         FragmentoConstelaciones.OnFragmentInteractionListener,
         FragmentoSupernovas.OnFragmentInteractionListener,
-        FragmentoCometas.OnFragmentInteractionListener {
-
+        FragmentoCometas.OnFragmentInteractionListener,
+        NavigationView.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener {
 
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
+    private BottomNavigationView bottomNavigationView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,62 +47,8 @@ public class MainActivity extends AppCompatActivity implements
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
 
-        //Menu De Navegacion Bottom Bar ( Indica que empieza seleccionado el item °1)
-        BottomNavigationView BottomNavigationView = findViewById(R.id.navigationView);
-        BottomNavigationView.setSelectedItemId(R.id.navigation1);
-
-        //ACCIONES DE LOS 5 BOTONES DE LA NAVIGATION BOTTOM BAR
-        BottomNavigationItemView item1 = findViewById(R.id.navigation1);
-        BottomNavigationItemView item2 = findViewById(R.id.navigation2);
-        BottomNavigationItemView item3 = findViewById(R.id.navigation3);
-        BottomNavigationItemView item4 = findViewById(R.id.navigation4);
-        BottomNavigationItemView item5 = findViewById(R.id.navigation5);
-
-        item1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, FragmentoPlanetas.class);
-                startActivity(i);
-
-            }
-        });
-
-        item2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, FragmentoNebulosas.class);
-                startActivity(i);
-
-            }
-        });
-
-        item3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, FragmentoGalaxias.class);
-                startActivity(i);
-
-            }
-        });
-
-        item4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, FragmentoConstelaciones.class);
-                startActivity(i);
-
-            }
-        });
-
-        item5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, FragmentoSupernovas.class);
-                startActivity(i);
-
-            }
-        });
-
+        bottomNavigationView = findViewById(R.id.navigationView);
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
 
 
         //FLOATING ACTION BUTTON BACK, PARA VOLVER AL LAUNCHER
@@ -122,4 +72,49 @@ public class MainActivity extends AppCompatActivity implements
     public void onFragmentInteraction(Uri uri) {
 
     }
+
+    /**
+     * Called when an item in the navigation menu is selected.
+     *
+     * @param item The selected item
+     * @return true to display the item as the selected item
+     */
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.navigation1:
+                FragmentoPlanetas planetfragment = new FragmentoPlanetas();
+                android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                return true;
+
+            case R.id.navigation2:
+                FragmentoNebulosas nebulafragment = new FragmentoNebulosas();
+                android.support.v4.app.FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction1.replace(R.id.idDelViewPager, nebulafragment).commit();
+                return true;
+
+            case R.id.navigation3:
+                FragmentoGalaxias galaxyfragment = new FragmentoGalaxias();
+                android.support.v4.app.FragmentTransaction fragmentTransaction2 = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction2.replace(R.id.idDelViewPager, galaxyfragment).commit();
+                return true;
+
+            case R.id.navigation4:
+                FragmentoConstelaciones constelacionesfragment = new FragmentoConstelaciones();
+                android.support.v4.app.FragmentTransaction fragmentTransaction3 = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction3.replace(R.id.idDelViewPager, constelacionesfragment).commit();
+                return true;
+
+            case R.id.navigation5:
+                FragmentoSupernovas accountFragment = new FragmentoSupernovas();
+                android.support.v4.app.FragmentTransaction fragmentTransaction4 = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction4.replace(R.id.idDelViewPager, accountFragment).commit();
+
+                return true;
+        }
+        return false;
+    }
 }
+
+
+

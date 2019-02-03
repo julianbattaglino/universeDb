@@ -59,11 +59,11 @@ public class NebulosasView extends BaseView<NebulosasActivity, NebulosasViewMode
 
 
     private void subscribeNebulosas() {
-        baseViewModel.getNebulosas().observe(baseActivity.get(), Nebulosas -> {
-            if (Nebulosas == null || Nebulosas.size() <= 0) {
+        baseViewModel.getNebulosas().observe(baseActivity.get(), nebulosas -> {
+            if (nebulosas == null || nebulosas.size() <= 0) {
                 baseViewModel.requestDataToServer();
             } else {
-                mNebulosas = Nebulosas;
+                mNebulosas = nebulosas;
                 mAdapter.addAll(mNebulosas);
             }
         });
