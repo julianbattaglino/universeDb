@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="start"
+        android:clickable="true"
+        android:contentDescription="@string/image"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/name" />
+
+    <TextView
+        android:id="@+id/tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/tipo" />
+
+
+    <TextView
+        android:id="@+id/distancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/distancia" />
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/descripcion" />
+
+    <TextView
+        android:id="@+id/constelacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/constelacion" />
+
+    <TextView
+        android:id="@+id/ascensiNrecta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/ascension" />
+
+    <TextView
+        android:id="@+id/declinaciN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/declinacion" />
+
+    <TextView
+        android:id="@+id/otrasDesignaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_mono_bold_italic"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/otras_designaciones" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@android:color/white" />
+
+
+</LinearLayout>

@@ -1,12 +1,12 @@
-package com.example.julian.universedb.nebulosas.repository;
+package com.example.julian.universedb.planetarias.repository;
 
 import android.app.Application;
 
 import com.example.julian.universedb.base.repository.UseCaseRepository;
 import com.example.julian.universedb.db.AppDatabase;
-import com.example.julian.universedb.db.entities.Nebulosas;
-import com.example.julian.universedb.global.models.NebulasApiResponse;
-import com.example.julian.universedb.global.services.NebulasApiServices;
+import com.example.julian.universedb.db.entities.Planetarias;
+import com.example.julian.universedb.global.models.PlanetariasApiResponse;
+import com.example.julian.universedb.global.services.PlanetariasApiService;
 
 import java.util.List;
 
@@ -21,14 +21,14 @@ import io.reactivex.schedulers.Schedulers;
 /**
  * Created by Santiago Battaglino.
  */
-public class NebulosasRepository extends UseCaseRepository<Nebulosas> {
+public class PlanetariasRepository extends UseCaseRepository<Planetarias> {
 
     private AppDatabase mDataBase;
-    private NebulasApiServices mClient;
+    private PlanetariasApiService mClient;
     private CompositeDisposable mDisposable;
 
     @Inject
-    NebulosasRepository(Application context, NebulasApiServices client) {
+    PlanetariasRepository(Application context, PlanetariasApiService client) {
         super(context);
         this.context = context;
         mClient = client;
@@ -37,34 +37,34 @@ public class NebulosasRepository extends UseCaseRepository<Nebulosas> {
 
     public void initLocalData() {
         mDataBase = AppDatabase.getDatabaseBuilder(context);
-        setDataList(mDataBase.nebulosasModel().loadList());
+        setDataList(mDataBase.planetariasModel().loadList());
     }
 
     @Override
-    public void addData(Nebulosas nebulosa) {
+    public void addData(Planetarias planetarias) {
 
     }
 
     @Override
-    public void addDataList(List<Nebulosas> nebulosas) {
-        mDataBase.nebulosasModel().insertList(nebulosas);
-        setDataList(mDataBase.nebulosasModel().loadList());
+    public void addDataList(List<Planetarias> planetarias) {
+        mDataBase.planetariasModel().insertList(planetarias);
+        setDataList(mDataBase.planetariasModel().loadList());
     }
 
     @Override
     public void requestDataToServer() {
-        mClient.getNebulas()
+        mClient.getPlanetarias()
                 .subscribeOn(Schedulers.computation())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Observer<NebulasApiResponse>() {
+                .subscribe(new Observer<PlanetariasApiResponse>() {
                     @Override
                     public void onSubscribe(Disposable d) {
                         mDisposable.add(d);
                     }
 
                     @Override
-                    public void onNext(NebulasApiResponse nebulasApiResponse) {
-                        addDataList(nebulasApiResponse.nebulosas);
+                    public void onNext(PlanetariasApiResponse planetariasapiResponse) {
+                        addDataList(planetariasapiResponse.planetarias);
                         mDisposable.dispose();
                     }
 

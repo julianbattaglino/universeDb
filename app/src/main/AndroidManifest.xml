@@ -32,6 +32,10 @@
             android:name=".nebulosas.activity.NebulosasActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
+        <activity
+            android:name=".planetarias.activity.PlanetariasActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
 
         <activity
             android:name=".actividadesuniverso.PlanetasActivity"
@@ -43,11 +47,6 @@
 
         <activity
             android:name=".actividadesuniverso.EstrellasActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-
-        <activity
-            android:name=".actividadesuniverso.NebulosasPlanetariasActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
 

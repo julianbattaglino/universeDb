@@ -12,10 +12,12 @@ import com.example.julian.universedb.db.converters.NameConverter;
 import com.example.julian.universedb.db.converters.PictureConverter;
 import com.example.julian.universedb.db.dao.LigaDao;
 import com.example.julian.universedb.db.dao.NebulosasDao;
+import com.example.julian.universedb.db.dao.PlanetariasDao;
 import com.example.julian.universedb.db.dao.UserDao;
 import com.example.julian.universedb.db.dao.UsersDao;
 import com.example.julian.universedb.db.entities.Liga;
 import com.example.julian.universedb.db.entities.Nebulosas;
+import com.example.julian.universedb.db.entities.Planetarias;
 import com.example.julian.universedb.db.entities.User;
 import com.example.julian.universedb.db.entities.Users;
 import com.example.julian.universedb.global.Constants;
@@ -28,7 +30,9 @@ import com.example.julian.universedb.global.Constants;
         User.class,
         Liga.class,
         Users.class,
-        Nebulosas.class
+        Nebulosas.class,
+        Planetarias.class
+
 }, version = 1)
 @TypeConverters({MiniSeriesConverter.class, NameConverter.class, PictureConverter.class})
 public abstract class AppDatabase extends RoomDatabase {
@@ -79,6 +83,8 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract UsersDao usersModel();
 
     public abstract NebulosasDao nebulosasModel();
+
+    public abstract PlanetariasDao planetariasModel();
 
     // If you need to update your database version, and add entities or new columns,
     // you gonna have to implement a Migration operation in order to avoid crashes or users losing data

@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "1c91e11531fb9f113353d843237b6e30",
+    "identityHash": "c4df49a096e92bee7e1e8728033b6693",
     "entities": [
       {
         "tableName": "users",
@@ -395,11 +395,106 @@
           }
         ],
         "foreignKeys": []
+      },
+      {
+        "tableName": "planetarias",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `id` TEXT, `name` TEXT, `tipo` TEXT, `distancia` TEXT, `datos` TEXT, `descripcion` TEXT, `constelacion` TEXT, `ascensiNrecta` TEXT, `declinaciN` TEXT, `otrasDesignaciones` TEXT, `image` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tipo",
+            "columnName": "tipo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "distancia",
+            "columnName": "distancia",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "datos",
+            "columnName": "datos",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "descripcion",
+            "columnName": "descripcion",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "constelacion",
+            "columnName": "constelacion",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ascensiNrecta",
+            "columnName": "ascensiNrecta",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "declinaciN",
+            "columnName": "declinaciN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "otrasDesignaciones",
+            "columnName": "otrasDesignaciones",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "image",
+            "columnName": "image",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_planetarias_uid",
+            "unique": false,
+            "columnNames": [
+              "uid"
+            ],
+            "createSql": "CREATE  INDEX `index_planetarias_uid` ON `${TABLE_NAME}` (`uid`)"
+          }
+        ],
+        "foreignKeys": []
       }
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"1c91e11531fb9f113353d843237b6e30\")"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"c4df49a096e92bee7e1e8728033b6693\")"
     ]
   }
 }
