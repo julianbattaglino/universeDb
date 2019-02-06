@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cardview_gradient"
-    tools:context="com.example.julian.syloperligas.ViewPagerFragments.Fragmento1">
+    android:background="@drawable/background"
+    tools:context=".viewpager.FragmentoGalaxias">
 
 
     <ImageView

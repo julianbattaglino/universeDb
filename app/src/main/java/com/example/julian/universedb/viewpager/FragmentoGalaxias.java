@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.example.julian.universedb.AnimationUtils;
 import com.example.julian.universedb.R;
-import com.example.julian.universedb.nebulosas.activity.NebulosasActivity;
+import com.example.julian.universedb._nebulosas.activity.NebulosasActivity;
 
 
 /**

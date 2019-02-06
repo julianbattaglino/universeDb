@@ -32,29 +32,7 @@
     <string name="powered_by">Powered By</string>
     <string name="dharma">DHARMA</string>
 
-    <string-array name="examples">
-        <item>Hello</item>
-        <item>Fading TextView</item>
-    </string-array>
 
-
-    <string-array name="spinner_fechas">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-        <item>13</item>
-        <item>14</item>
-        <item>15</item>
-    </string-array>
 
     //Spinner Launcher
     <string-array name="spinner_divisiones">
@@ -69,7 +47,7 @@
     </string-array>
 
 
-    //Api Nebulosas
+    //String Nebulosas
 
     <string name="otras_designaciones">otras designaciones</string>
     <string name="declinacion">declinacion</string>
@@ -80,6 +58,8 @@
     <string name="name">name</string>
     <string name="tipo">tipo</string>
     <string name="todo">TODO</string>
+
+    //String Nebulosas Planetarias
     <string name="name2">name2</string>
     <string name="tipo2">tipo2</string>
     <string name="distancia2">distancia2</string>
@@ -88,6 +68,21 @@
     <string name="ascension2">ascension2</string>
     <string name="declinacion2">declinacion2</string>
     <string name="otras_designaciones2">otras_designaciones2</string>
+
+
+    //String Planetas
+    <string name="tv_categoriaplanetas">tv_categoriaplanetas</string>
+    <string name="tvnameplanetas">tvnameplanetas</string>
+    <string name="tv_distanciasplanetas">tv_distanciasplanetas</string>
+    <string name="tv_element_orbitales_planetas">tv_element_orbitales_planetas</string>
+    <string name="tv_atmosfera_planetas">tv_atmosfera_planetas</string>
+    <string name="tv_principales_planetas">tv_principales_planetas</string>
+    <string name="tv_fisicas_planetas">tv_fisicas_planetas+</string>
+    <string name="tv_atmosfericas_planetas">tv_atmosfericas_planetas</string>
+    <string name="tv_satelites_planetas">tv_satelites_planetas</string>
+    <string name="tv_masa_planetas">tv_masa_planetas</string>
+    <string name="tv_otrosdatos_planetas">tv_otrosdatos_planetas</string>
+    <string name="imageplanetas">imageplanetas</string>
 
 
 </resources>

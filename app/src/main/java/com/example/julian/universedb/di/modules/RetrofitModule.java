@@ -2,11 +2,11 @@ package com.example.julian.universedb.di.modules;
 
 
 import com.example.julian.universedb.BuildConfig;
-import com.example.julian.universedb.global.services.LOLApiService;
-import com.example.julian.universedb.global.services.MyApiServices;
 import com.example.julian.universedb.global.services.NebulasApiServices;
 import com.example.julian.universedb.global.services.PlanetariasApiService;
+import com.example.julian.universedb.global.services.PlanetasApiService;
 import com.example.julian.universedb.global.services.RandomUserApiServic;
+import com.example.julian.universedb.global.services.SatelitesApiService;
 
 import javax.inject.Singleton;
 
@@ -46,29 +46,6 @@ public class RetrofitModule {
         return retrofit.create(RandomUserApiServic.class);
     }
 
-    @Provides
-    @Singleton
-    LOLApiService provideLOLApiService(OkHttpClient okHttpClient) {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(BuildConfig.API_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-                .client(okHttpClient).build();
-
-        return retrofit.create(LOLApiService.class);
-    }
-
-    @Provides
-    @Singleton
-    MyApiServices provideMyApiServices(OkHttpClient okHttpClient) {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(BuildConfig.API_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-                .client(okHttpClient).build();
-
-        return retrofit.create(MyApiServices.class);
-    }
 
     @Provides
     @Singleton
@@ -94,5 +71,29 @@ public class RetrofitModule {
 
         return retrofit.create(PlanetariasApiService.class);
 
+    }
+
+    @Provides
+    @Singleton
+    PlanetasApiService providePlanetasApiServices(OkHttpClient okHttpClient) {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(BuildConfig.API_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .client(okHttpClient).build();
+
+        return retrofit.create(PlanetasApiService.class);
+    }
+
+    @Provides
+    @Singleton
+    SatelitesApiService provideSatelitesApiServices(OkHttpClient okHttpClient) {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(BuildConfig.API_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .client(okHttpClient).build();
+
+        return retrofit.create(SatelitesApiService.class);
     }
 }

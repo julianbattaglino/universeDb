@@ -31,6 +31,7 @@ public class Launcher extends AppCompatActivity {
 
 
         ImageView moon = findViewById(R.id.moon);
+        CardView cardviewtitle = findViewById(R.id.cardviewtitle);
         CardView cardviewspinner = findViewById(R.id.cardviewspinner);
         Spinner spinner = findViewById(R.id.spinner);
 
@@ -39,6 +40,7 @@ public class Launcher extends AppCompatActivity {
         AnimationUtils.enterLeft(cardviewspinner, 1500);
 
         AnimationUtils.enterRight(universedb, 2000);
+        AnimationUtils.enterLeft(cardviewtitle, 2100);
         AnimationUtils.rotateX(universedb, 2200);
 
         AnimationUtils.enterLeft(poweredby, 2200);

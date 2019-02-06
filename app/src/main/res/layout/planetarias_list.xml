@@ -1,106 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="4dp">
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp">
 
-    <ImageView
-        android:id="@+id/imageplanetarias"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="start"
-        android:clickable="true"
-        android:contentDescription="@string/image"
-        android:focusable="true"
-        android:foreground="?attr/selectableItemBackground" />
-
-
-    <TextView
-        android:id="@+id/nameplanetarias"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:fontFamily="@font/roboto_mono_bold_italic"
-        android:foreground="?attr/selectableItemBackground"
-        android:text="@string/name2" />
+        android:orientation="vertical"
+        android:padding="4dp">
 
-    <TextView
-        android:id="@+id/tipoplanetarias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:fontFamily="@font/roboto_mono_bold_italic"
-        android:foreground="?attr/selectableItemBackground"
-        android:text="@string/tipo2" />
+        <ImageView
+            android:id="@+id/imageplanetarias"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="start"
+            android:clickable="true"
+            android:contentDescription="@string/image"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground" />
 
 
-    <TextView
-        android:id="@+id/distanciaplanetarias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:fontFamily="@font/roboto_mono_bold_italic"
-        android:foreground="?attr/selectableItemBackground"
-        android:text="@string/distancia2" />
+        <TextView
+            android:id="@+id/nameplanetarias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_mono_bold_italic"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/name2"
+            android:textColor="@color/cardview_light_background" />
 
-    <TextView
-        android:id="@+id/descripcionplanetarias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:fontFamily="@font/roboto_mono_bold_italic"
-        android:foreground="?attr/selectableItemBackground"
-        android:text="@string/descripcion2" />
-
-    <TextView
-        android:id="@+id/constelacionplanetarias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:fontFamily="@font/roboto_mono_bold_italic"
-        android:foreground="?attr/selectableItemBackground"
-        android:text="@string/constelacion2" />
-
-    <TextView
-        android:id="@+id/ascensiNrectaplanetarias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:fontFamily="@font/roboto_mono_bold_italic"
-        android:foreground="?attr/selectableItemBackground"
-        android:text="@string/ascension2" />
-
-    <TextView
-        android:id="@+id/declinaciNplanetarias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:fontFamily="@font/roboto_mono_bold_italic"
-        android:foreground="?attr/selectableItemBackground"
-        android:text="@string/declinacion2" />
-
-    <TextView
-        android:id="@+id/otrasDesignacionesplanetarias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:fontFamily="@font/roboto_mono_bold_italic"
-        android:foreground="?attr/selectableItemBackground"
-        android:text="@string/otras_designaciones2" />
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="2dp"
-        android:background="@android:color/white" />
+        <TextView
+            android:id="@+id/tipoplanetarias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_mono_bold_italic"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/tipo2"
+            android:textColor="@color/cardview_light_background" />
 
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/distanciaplanetarias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_mono_bold_italic"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/distancia2"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/descripcionplanetarias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_mono_bold_italic"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/descripcion2"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/constelacionplanetarias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_mono_bold_italic"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/constelacion2"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/ascensiNrectaplanetarias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_mono_bold_italic"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/ascension2"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/declinaciNplanetarias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_mono_bold_italic"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/declinacion2"
+            android:textColor="@color/cardview_light_background" />
+
+        <TextView
+            android:id="@+id/otrasDesignacionesplanetarias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_mono_bold_italic"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/otras_designaciones2"
+            android:textColor="@color/cardview_light_background" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

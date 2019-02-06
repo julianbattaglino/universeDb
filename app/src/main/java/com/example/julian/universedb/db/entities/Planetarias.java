@@ -56,4 +56,21 @@ public class Planetarias {
     @Expose
     public String image;
 
+    @Override
+    public String toString() {
+        return "Planetarias{" +
+                "uid=" + uid +
+                ", id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", tipo='" + tipo + '\'' +
+                ", distancia='" + distancia + '\'' +
+                ", datos='" + datos + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                ", constelacion='" + constelacion + '\'' +
+                ", ascensiNrecta='" + ascensiNrecta + '\'' +
+                ", declinaciN='" + declinaciN + '\'' +
+                ", otrasDesignaciones='" + otrasDesignaciones + '\'' +
+                ", image='" + image + '\'' +
+                '}';
+    }
 }

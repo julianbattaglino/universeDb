@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,8 +16,8 @@ import android.widget.TextView;
 
 import com.example.julian.universedb.AnimationUtils;
 import com.example.julian.universedb.R;
-import com.example.julian.universedb.nebulosas.activity.NebulosasActivity;
-import com.example.julian.universedb.planetarias.activity.PlanetariasActivity;
+import com.example.julian.universedb._nebulosas.activity.NebulosasActivity;
+import com.example.julian.universedb._planetarias.activity.PlanetariasActivity;
 
 
 /**
@@ -86,20 +87,29 @@ public class FragmentoNebulosas extends Fragment implements View.OnClickListener
         //***Aca Tengo Asignados Los 6 ImageButton de los equipos cargados hasta el momento***
 
 
-        TextView tvnebulosas = view.findViewById(R.id.tvnebulosas);
-        TextView tvnebulosasplanetarias = view.findViewById(R.id.tvnebulosasplanetarias);
+        CardView nebula1 = view.findViewById(R.id.cardviewtvnebula1);
+        CardView nebula2 = view.findViewById(R.id.cardviewtvnebula2);
+
+
+        TextView tvnebulosas = view.findViewById(R.id.tvnebula);
+        TextView tvnebulosasplanetarias = view.findViewById(R.id.tvnebulaplanetarias);
 
         ImageView nebulosas = view.findViewById(R.id.nebulosas);
         ImageView nebulosasplanetarias = view.findViewById(R.id.nebulosasplanetarias);
 
 
-        AnimationUtils.enterLeft(tvnebulosas, 2000);
+        AnimationUtils.enterLeft(tvnebulosas, 2700);
+        AnimationUtils.enterRight(nebula1, 2000);
+        AnimationUtils.rotateX(tvnebulosas, 2900);
+
         AnimationUtils.enterRight(tvnebulosasplanetarias, 2500);
+        AnimationUtils.enterRight(nebula2, 2000);
+        AnimationUtils.rotateX(tvnebulosasplanetarias, 2700);
 
 
-        AnimationUtils.enterRight(nebulosas, 1000);
+        AnimationUtils.enterRight(nebulosas, 2500);
 
-        AnimationUtils.enterLeft(nebulosasplanetarias, 1500);
+        AnimationUtils.enterLeft(nebulosasplanetarias, 2500);
 
         nebulosas.setOnClickListener(new View.OnClickListener() {
             @Override

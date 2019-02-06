@@ -29,21 +29,21 @@
             android:label="@string/ViewPager" />
 
         <activity
-            android:name=".nebulosas.activity.NebulosasActivity"
+            android:name="._nebulosas.activity.NebulosasActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
-            android:name=".planetarias.activity.PlanetariasActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-
-        <activity
-            android:name=".actividadesuniverso.PlanetasActivity"
+            android:name="._planetarias.activity.PlanetariasActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <activity
-            android:name=".actividadesuniverso.SatelitesNaturalesActivity"
+            android:name="._planetas.activity.PlanetasActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name="._satelites.activity.SatelitesActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
 
         <activity
             android:name=".actividadesuniverso.EstrellasActivity"

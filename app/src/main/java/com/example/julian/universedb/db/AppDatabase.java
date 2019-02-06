@@ -7,19 +7,18 @@ import android.arch.persistence.room.TypeConverters;
 import android.content.Context;
 
 import com.example.julian.universedb.BuildConfig;
-import com.example.julian.universedb.db.converters.MiniSeriesConverter;
 import com.example.julian.universedb.db.converters.NameConverter;
 import com.example.julian.universedb.db.converters.PictureConverter;
-import com.example.julian.universedb.db.dao.LigaDao;
 import com.example.julian.universedb.db.dao.NebulosasDao;
 import com.example.julian.universedb.db.dao.PlanetariasDao;
+import com.example.julian.universedb.db.dao.PlanetasDao;
+import com.example.julian.universedb.db.dao.SatelitesDao;
 import com.example.julian.universedb.db.dao.UserDao;
-import com.example.julian.universedb.db.dao.UsersDao;
-import com.example.julian.universedb.db.entities.Liga;
 import com.example.julian.universedb.db.entities.Nebulosas;
 import com.example.julian.universedb.db.entities.Planetarias;
+import com.example.julian.universedb.db.entities.Planetas;
+import com.example.julian.universedb.db.entities.Satelites;
 import com.example.julian.universedb.db.entities.User;
-import com.example.julian.universedb.db.entities.Users;
 import com.example.julian.universedb.global.Constants;
 
 /**
@@ -28,13 +27,13 @@ import com.example.julian.universedb.global.Constants;
  */
 @Database(entities = {
         User.class,
-        Liga.class,
-        Users.class,
         Nebulosas.class,
-        Planetarias.class
+        Planetarias.class,
+        Planetas.class,
+        Satelites.class
 
 }, version = 1)
-@TypeConverters({MiniSeriesConverter.class, NameConverter.class, PictureConverter.class})
+@TypeConverters({NameConverter.class, PictureConverter.class})
 public abstract class AppDatabase extends RoomDatabase {
 
     private static AppDatabase INSTANCE;
@@ -78,13 +77,13 @@ public abstract class AppDatabase extends RoomDatabase {
 
     public abstract UserDao userModel();
 
-    public abstract LigaDao ligaModel();
-
-    public abstract UsersDao usersModel();
-
     public abstract NebulosasDao nebulosasModel();
 
     public abstract PlanetariasDao planetariasModel();
+
+    public abstract PlanetasDao planetasModel();
+
+    public abstract SatelitesDao satelitesModel();
 
     // If you need to update your database version, and add entities or new columns,
     // you gonna have to implement a Migration operation in order to avoid crashes or users losing data

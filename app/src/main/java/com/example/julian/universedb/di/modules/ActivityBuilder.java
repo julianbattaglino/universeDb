@@ -1,10 +1,10 @@
 package com.example.julian.universedb.di.modules;
 
 
-import com.example.julian.universedb.liga.activity.LigaActivity;
-import com.example.julian.universedb.mydb.activity.MyDbActivity;
-import com.example.julian.universedb.nebulosas.activity.NebulosasActivity;
-import com.example.julian.universedb.planetarias.activity.PlanetariasActivity;
+import com.example.julian.universedb._nebulosas.activity.NebulosasActivity;
+import com.example.julian.universedb._planetarias.activity.PlanetariasActivity;
+import com.example.julian.universedb._planetas.activity.PlanetasActivity;
+import com.example.julian.universedb._satelites.activity.SatelitesActivity;
 import com.example.julian.universedb.user.activity.UserDetailActivity;
 import com.example.julian.universedb.user.activity.UserGridActivity;
 
@@ -20,11 +20,6 @@ import dagger.android.ContributesAndroidInjector;
 @Module
 public abstract class ActivityBuilder {
 
-    @ContributesAndroidInjector(modules = {LigaActivityModule.class})
-    abstract LigaActivity bindLigaActivity();
-
-    @ContributesAndroidInjector(modules = {MyDbActivityModule.class})
-    abstract MyDbActivity bindDbActivity();
 
     @ContributesAndroidInjector(modules = {UserGridActivityModule.class})
     abstract UserGridActivity bindUserGridActivity();
@@ -38,4 +33,9 @@ public abstract class ActivityBuilder {
     @ContributesAndroidInjector(modules = {PlanetariasActivityModule.class})
     abstract PlanetariasActivity bindPlanetariasActivity();
 
+    @ContributesAndroidInjector(modules = {PlanetasActivityModule.class})
+    abstract PlanetasActivity bindPlanetasActivity();
+
+    @ContributesAndroidInjector(modules = {SatelitesActivityModule.class})
+    abstract SatelitesActivity bindSatelitesActivity();
 }

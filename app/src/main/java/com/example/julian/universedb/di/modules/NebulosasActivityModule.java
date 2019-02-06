@@ -1,9 +1,9 @@
 package com.example.julian.universedb.di.modules;
 
 
-import com.example.julian.universedb.nebulosas.activity.NebulosasActivity;
-import com.example.julian.universedb.nebulosas.mvvm.view.NebulosasView;
-import com.example.julian.universedb.nebulosas.mvvm.viewmodel.NebulosasViewModel;
+import com.example.julian.universedb._nebulosas.activity.NebulosasActivity;
+import com.example.julian.universedb._nebulosas.mvvm.view.NebulosasView;
+import com.example.julian.universedb._nebulosas.mvvm.viewmodel.NebulosasViewModel;
 
 import dagger.Module;
 import dagger.Provides;

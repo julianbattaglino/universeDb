@@ -2,7 +2,7 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "794f356a9080f9a421547929f6559dad",
+    "identityHash": "da7990bb3aeeb143a5131c596e454107",
     "entities": [
       {
         "tableName": "users",
@@ -77,226 +77,6 @@
               "uid"
             ],
             "createSql": "CREATE  INDEX `index_users_uid` ON `${TABLE_NAME}` (`uid`)"
-          }
-        ],
-        "foreignKeys": []
-      },
-      {
-        "tableName": "ligas",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `leagueId` TEXT, `leagueName` TEXT, `queueType` TEXT, `position` TEXT, `tier` TEXT, `rank` TEXT, `leaguePoints` INTEGER, `wins` INTEGER, `losses` INTEGER, `veteran` INTEGER, `inactive` INTEGER, `freshBlood` INTEGER, `hotStreak` INTEGER, `miniSeries` TEXT, `summonerId` TEXT, `summonerName` TEXT)",
-        "fields": [
-          {
-            "fieldPath": "uid",
-            "columnName": "uid",
-            "affinity": "INTEGER",
-            "notNull": true
-          },
-          {
-            "fieldPath": "leagueId",
-            "columnName": "leagueId",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "leagueName",
-            "columnName": "leagueName",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "queueType",
-            "columnName": "queueType",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "position",
-            "columnName": "position",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "tier",
-            "columnName": "tier",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "rank",
-            "columnName": "rank",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "leaguePoints",
-            "columnName": "leaguePoints",
-            "affinity": "INTEGER",
-            "notNull": false
-          },
-          {
-            "fieldPath": "wins",
-            "columnName": "wins",
-            "affinity": "INTEGER",
-            "notNull": false
-          },
-          {
-            "fieldPath": "losses",
-            "columnName": "losses",
-            "affinity": "INTEGER",
-            "notNull": false
-          },
-          {
-            "fieldPath": "veteran",
-            "columnName": "veteran",
-            "affinity": "INTEGER",
-            "notNull": false
-          },
-          {
-            "fieldPath": "inactive",
-            "columnName": "inactive",
-            "affinity": "INTEGER",
-            "notNull": false
-          },
-          {
-            "fieldPath": "freshBlood",
-            "columnName": "freshBlood",
-            "affinity": "INTEGER",
-            "notNull": false
-          },
-          {
-            "fieldPath": "hotStreak",
-            "columnName": "hotStreak",
-            "affinity": "INTEGER",
-            "notNull": false
-          },
-          {
-            "fieldPath": "miniSeries",
-            "columnName": "miniSeries",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "summonerId",
-            "columnName": "summonerId",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "summonerName",
-            "columnName": "summonerName",
-            "affinity": "TEXT",
-            "notNull": false
-          }
-        ],
-        "primaryKey": {
-          "columnNames": [
-            "uid"
-          ],
-          "autoGenerate": true
-        },
-        "indices": [
-          {
-            "name": "index_ligas_uid",
-            "unique": false,
-            "columnNames": [
-              "uid"
-            ],
-            "createSql": "CREATE  INDEX `index_ligas_uid` ON `${TABLE_NAME}` (`uid`)"
-          }
-        ],
-        "foreignKeys": []
-      },
-      {
-        "tableName": "myusers",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `id` TEXT, `firstName` TEXT, `lastName` TEXT, `email` TEXT, `telephone` TEXT, `nationality` TEXT, `city` TEXT, `state` TEXT, `age` TEXT, `pictureUrl` TEXT, `sectorId` TEXT)",
-        "fields": [
-          {
-            "fieldPath": "uid",
-            "columnName": "uid",
-            "affinity": "INTEGER",
-            "notNull": true
-          },
-          {
-            "fieldPath": "id",
-            "columnName": "id",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "firstName",
-            "columnName": "firstName",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "lastName",
-            "columnName": "lastName",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "email",
-            "columnName": "email",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "telephone",
-            "columnName": "telephone",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "nationality",
-            "columnName": "nationality",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "city",
-            "columnName": "city",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "state",
-            "columnName": "state",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "age",
-            "columnName": "age",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "pictureUrl",
-            "columnName": "pictureUrl",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "sectorId",
-            "columnName": "sectorId",
-            "affinity": "TEXT",
-            "notNull": false
-          }
-        ],
-        "primaryKey": {
-          "columnNames": [
-            "uid"
-          ],
-          "autoGenerate": true
-        },
-        "indices": [
-          {
-            "name": "index_myusers_uid",
-            "unique": false,
-            "columnNames": [
-              "uid"
-            ],
-            "createSql": "CREATE  INDEX `index_myusers_uid` ON `${TABLE_NAME}` (`uid`)"
           }
         ],
         "foreignKeys": []
@@ -490,11 +270,195 @@
           }
         ],
         "foreignKeys": []
+      },
+      {
+        "tableName": "Planetas",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `id` TEXT, `categoria` TEXT, `name` TEXT, `magnitudAparente` TEXT, `elementosOrbitales` TEXT, `elementosOrbitalesDerivados` TEXT, `atmosfera` TEXT, `caracteristicasPrincipales` TEXT, `caracteristicasFSicas` TEXT, `caracteristicasAtmosfRicas` TEXT, `masa` TEXT, `satelites` TEXT, `otrosDatos` TEXT, `image` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "categoria",
+            "columnName": "categoria",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "magnitudAparente",
+            "columnName": "magnitudAparente",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "elementosOrbitales",
+            "columnName": "elementosOrbitales",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "elementosOrbitalesDerivados",
+            "columnName": "elementosOrbitalesDerivados",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "atmosfera",
+            "columnName": "atmosfera",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "caracteristicasPrincipales",
+            "columnName": "caracteristicasPrincipales",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "caracteristicasFSicas",
+            "columnName": "caracteristicasFSicas",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "caracteristicasAtmosfRicas",
+            "columnName": "caracteristicasAtmosfRicas",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "masa",
+            "columnName": "masa",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "satelites",
+            "columnName": "satelites",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "otrosDatos",
+            "columnName": "otrosDatos",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "image",
+            "columnName": "image",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_Planetas_uid",
+            "unique": false,
+            "columnNames": [
+              "uid"
+            ],
+            "createSql": "CREATE  INDEX `index_Planetas_uid` ON `${TABLE_NAME}` (`uid`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Satelites",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `id` TEXT, `tipo` TEXT, `planeta` TEXT, `nombre` TEXT, `caracteristicas` TEXT, `descubridor` TEXT, `image` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tipo",
+            "columnName": "tipo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "planeta",
+            "columnName": "planeta",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nombre",
+            "columnName": "nombre",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "caracteristicas",
+            "columnName": "caracteristicas",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "descubridor",
+            "columnName": "descubridor",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "image",
+            "columnName": "image",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uid"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_Satelites_uid",
+            "unique": false,
+            "columnNames": [
+              "uid"
+            ],
+            "createSql": "CREATE  INDEX `index_Satelites_uid` ON `${TABLE_NAME}` (`uid`)"
+          }
+        ],
+        "foreignKeys": []
       }
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"794f356a9080f9a421547929f6559dad\")"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"da7990bb3aeeb143a5131c596e454107\")"
     ]
   }
 }

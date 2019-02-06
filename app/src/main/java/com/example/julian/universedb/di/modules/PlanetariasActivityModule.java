@@ -1,8 +1,8 @@
 package com.example.julian.universedb.di.modules;
 
-import com.example.julian.universedb.planetarias.activity.PlanetariasActivity;
-import com.example.julian.universedb.planetarias.mvvm.view.PlanetariasView;
-import com.example.julian.universedb.planetarias.mvvm.viewmodel.PlanetariasViewModel;
+import com.example.julian.universedb._planetarias.activity.PlanetariasActivity;
+import com.example.julian.universedb._planetarias.mvvm.view.PlanetariasView;
+import com.example.julian.universedb._planetarias.mvvm.viewmodel.PlanetariasViewModel;
 
 import dagger.Module;
 import dagger.Provides;

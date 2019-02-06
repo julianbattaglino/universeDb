@@ -17,7 +17,9 @@ import android.widget.TextView;
 
 import com.example.julian.universedb.AnimationUtils;
 import com.example.julian.universedb.R;
-import com.example.julian.universedb.nebulosas.activity.NebulosasActivity;
+import com.example.julian.universedb._nebulosas.activity.NebulosasActivity;
+import com.example.julian.universedb._planetas.activity.PlanetasActivity;
+import com.example.julian.universedb._satelites.activity.SatelitesActivity;
 
 
 /**
@@ -128,7 +130,7 @@ public class FragmentoPlanetas extends Fragment implements View.OnClickListener 
         planetas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getContext(), NebulosasActivity.class);
+                Intent i = new Intent(getContext(), PlanetasActivity.class);
                 startActivity(i);
             }
         });
@@ -136,7 +138,7 @@ public class FragmentoPlanetas extends Fragment implements View.OnClickListener 
         satelites.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getContext(), NebulosasActivity.class);
+                Intent i = new Intent(getContext(), SatelitesActivity.class);
                 startActivity(i);
             }
         });

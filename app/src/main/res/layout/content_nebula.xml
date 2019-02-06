@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="android.support.v7.widget.LinearLayoutManager"
-        tools:context=".nebulosas.activity.NebulosasActivity"
+        tools:context="._nebulosas.activity.NebulosasActivity"
         tools:listitem="@layout/nebula_list" />
 
 </LinearLayout>

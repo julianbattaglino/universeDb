@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.example.julian.universedb.AnimationUtils;
 import com.example.julian.universedb.R;
-import com.example.julian.universedb.mydb.activity.MyDbActivity;
+import com.example.julian.universedb._nebulosas.activity.NebulosasActivity;
 
 
 /**
@@ -96,7 +96,7 @@ public class FragmentoCometas extends Fragment implements View.OnClickListener {
         cometas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getContext(), MyDbActivity.class);
+                Intent i = new Intent(getContext(), NebulosasActivity.class);
                 startActivity(i);
             }
         });
