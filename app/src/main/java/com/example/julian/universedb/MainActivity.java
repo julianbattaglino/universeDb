@@ -84,31 +84,32 @@ public class MainActivity extends AppCompatActivity implements
         switch (item.getItemId()) {
             case R.id.navigation1:
                 FragmentoPlanetas planetfragment = new FragmentoPlanetas();
-                android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                android.support.v4.app.FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction1.replace(R.id.idDelViewPager, planetfragment).commit();
                 return true;
 
             case R.id.navigation2:
                 FragmentoNebulosas nebulafragment = new FragmentoNebulosas();
-                android.support.v4.app.FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction1.replace(R.id.idDelViewPager, nebulafragment).commit();
+                android.support.v4.app.FragmentTransaction fragmentTransaction2 = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction2.replace(R.id.idDelViewPager, nebulafragment).commit();
                 return true;
 
             case R.id.navigation3:
                 FragmentoGalaxias galaxyfragment = new FragmentoGalaxias();
-                android.support.v4.app.FragmentTransaction fragmentTransaction2 = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction2.replace(R.id.idDelViewPager, galaxyfragment).commit();
+                android.support.v4.app.FragmentTransaction fragmentTransaction3 = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction3.replace(R.id.idDelViewPager, galaxyfragment).commit();
                 return true;
 
             case R.id.navigation4:
                 FragmentoConstelaciones constelacionesfragment = new FragmentoConstelaciones();
-                android.support.v4.app.FragmentTransaction fragmentTransaction3 = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction3.replace(R.id.idDelViewPager, constelacionesfragment).commit();
+                android.support.v4.app.FragmentTransaction fragmentTransaction4 = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction4.replace(R.id.idDelViewPager, constelacionesfragment).commit();
                 return true;
 
             case R.id.navigation5:
                 FragmentoSupernovas accountFragment = new FragmentoSupernovas();
-                android.support.v4.app.FragmentTransaction fragmentTransaction4 = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction4.replace(R.id.idDelViewPager, accountFragment).commit();
+                android.support.v4.app.FragmentTransaction fragmentTransaction5 = getSupportFragmentManager().beginTransaction();
+                fragmentTransaction5.replace(R.id.idDelViewPager, accountFragment).commit();
 
                 return true;
         }

@@ -3,29 +3,29 @@
 
     <item
         android:id="@+id/navigation1"
-        android:icon="@drawable/ic_local_offer_black_24dp"
-        android:title="Resultados" />
+        android:icon="@drawable/iconsaturno"
+        android:title="Planetas" />
 
     <item
         android:id="@+id/navigation2"
-        android:icon="@drawable/ic_lock_black_24dp"
-        android:title="Fixture" />
+        android:icon="@drawable/nebulaicon"
+        android:title="Nebulosas" />
 
     <item
         android:id="@+id/navigation3"
-        android:icon="@drawable/ic_message_black_24dp"
-        android:title="Posiciones" />
+        android:icon="@drawable/galaxyicon"
+        android:title="Galaxias" />
 
     <item
         android:id="@+id/navigation4"
-        android:icon="@drawable/ic_remove_red_eye_black_24dp"
-        android:title="Goleadores" />
+        android:icon="@drawable/constelationicon"
+        android:title="Constelaciones" />
 
 
     <item
         android:id="@+id/navigation5"
-        android:icon="@drawable/ic_today_black_24dp"
-        android:title="Equipos" />
+        android:icon="@drawable/supernovaicon"
+        android:title="Supernovas" />
 
 </menu>
 
