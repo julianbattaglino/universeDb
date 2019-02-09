@@ -58,5 +58,8 @@ ext {
 
     materialSearchViewVersion = '1.4.0'
 
+
+
     junitVersion = '4.12'
+
 }

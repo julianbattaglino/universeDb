@@ -35,7 +35,7 @@
 
 
     //Spinner Launcher
-    <string-array name="spinner_divisiones">
+    <string-array name="spinner_actividades">
         <item>Planetas - Satelites - Estrellas</item>
         <item>Nebulosas - Nebulosas Planetarias</item>
         <item>Galaxias</item>
@@ -83,6 +83,7 @@
     <string name="tv_masa_planetas">tv_masa_planetas</string>
     <string name="tv_otrosdatos_planetas">tv_otrosdatos_planetas</string>
     <string name="imageplanetas">imageplanetas</string>
+    <string name="universe_database">Universe Database</string>
 
 
 </resources>
