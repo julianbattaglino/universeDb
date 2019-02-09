@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#dc424242"
+            app:cardBackgroundColor="#424242"
             app:cardCornerRadius="10dp"
             app:cardElevation="10dp">
 
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#96424242"
+            app:cardBackgroundColor="#424242"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp">
 
@@ -81,7 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#96424242"
+            app:cardBackgroundColor="#424242"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp">
 
@@ -103,7 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#96424242"
+            app:cardBackgroundColor="#424242"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp">
 
@@ -125,7 +125,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#96424242"
+            app:cardBackgroundColor="#424242"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp">
 
@@ -147,7 +147,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#96424242"
+            app:cardBackgroundColor="#424242"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp">
 
@@ -169,7 +169,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#96424242"
+            app:cardBackgroundColor="#424242"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp">
 
@@ -184,14 +184,14 @@
                 android:padding="5sp"
                 android:text="@string/tv_principales_planetas"
                 android:textColor="@color/cardview_light_background"
-                android:textSize="8sp" />
+                android:textSize="12sp" />
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#96424242"
+            app:cardBackgroundColor="#424242"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp">
 
@@ -206,14 +206,14 @@
                 android:padding="5sp"
                 android:text="@string/tv_fisicas_planetas"
                 android:textColor="@color/cardview_light_background"
-                android:textSize="8sp" />
+                android:textSize="12sp" />
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#96424242"
+            app:cardBackgroundColor="#424242"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp">
 
@@ -228,14 +228,14 @@
                 android:padding="5sp"
                 android:text="@string/tv_atmosfericas_planetas"
                 android:textColor="@color/cardview_light_background"
-                android:textSize="8sp" />
+                android:textSize="12sp" />
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#96424242"
+            app:cardBackgroundColor="#424242"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp">
 
@@ -250,14 +250,14 @@
                 android:padding="5sp"
                 android:text="@string/tv_masa_planetas"
                 android:textColor="@color/cardview_light_background"
-                android:textSize="8sp" />
+                android:textSize="12sp" />
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#96424242"
+            app:cardBackgroundColor="#424242"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp">
 
@@ -272,14 +272,14 @@
                 android:padding="5sp"
                 android:text="@string/tv_satelites_planetas"
                 android:textColor="@color/cardview_light_background"
-                android:textSize="8sp" />
+                android:textSize="12sp" />
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardBackgroundColor="#96424242"
+            app:cardBackgroundColor="#424242"
             app:cardCornerRadius="15dp"
             app:cardElevation="10dp">
 
@@ -293,7 +293,7 @@
                 android:foreground="?attr/selectableItemBackground"
                 android:text="@string/tv_otrosdatos_planetas"
                 android:textColor="@color/cardview_light_background"
-                android:textSize="8sp" />
+                android:textSize="12sp" />
         </android.support.v7.widget.CardView>
 
 

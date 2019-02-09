@@ -58,6 +58,8 @@
         android:id="@+id/fab_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/navigationView"
+        android:layout_alignParentEnd="true"
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/iconsaturno"
