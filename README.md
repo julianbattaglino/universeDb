@@ -2,10 +2,9 @@
 Database Universe Demo
 MVVM - RETROFIT - PICASSO - RX JAVA - DAGGER - ROOM 
 Api Rest Desarrollada y diseñada
-Ejemplo de comunicacion con api rest desde host.
+Ejemplo de comunicacion con api rest desde Host Web.
 Get REQUEST.
 
-<a href="https://imgflip.com/gif/34wc87"><img src="https://i.imgflip.com/34wc87.gif" title="made at imgflip.com"/></a>                                       
-<a href="https://imgflip.com/gif/34wcqn"><img src="https://i.imgflip.com/34wcqn.gif" title="made at imgflip.com"/></a>
+Splash Screen - Login Screen - ViewPager Swipe - Navigation Bottom Bar
 
-<a href="https://imgflip.com/gif/34wd1k"><img src="https://i.imgflip.com/34wd1k.gif" title="made at imgflip.com"/></a>
+<a href="https://imgflip.com/gif/34y5bp"><img src="https://i.imgflip.com/34y5bp.gif" title="made at imgflip.com"/></a>
